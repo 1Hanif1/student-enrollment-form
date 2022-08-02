@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./script.js"></script>
+    <title>Student Enrollment form</title>
+</head>
+
+<body>
+    <nav class="nav">
+        <h1>Student Enrollment Form</h1>
+    </nav>
+    <main class="main">
+        <section class="left">
+            <div class="input_field">
+                <span>Name</span>
+                <input class="name--js" type="text" name="name">
+            </div>
+            <div class="input_field">
+                <span>Email</span>
+                <input class="email--js" type="email" name="email">
+            </div>
+            <div class="input_field">
+                <span>Website</span>
+                <input class="website--js" type="text" name="website">
+            </div>
+            <div class="input_field">
+                <span>Image link</span>
+                <input class="image--js" type="text" name="image">
+            </div>
+            <div class="input_field">
+                <span>Gender</span>
+                <div class="radio_buttons">
+                    <input id="male" type="radio" name="gender" value="Male">
+                    <label for="male">Male</label>
+                    <br>
+                    <input id="female" type="radio" name="gender" value="Female">
+                    <label for="female">Female</label>
+                    <br>
+                    <input id="Other" type="radio" name="gender" value="Other">
+                    <label for="Other">Other</label>
+                </div>
+            </div>
+            <div class="input_field">
+                <span>Skills</span>
+                <div class="checkbox_container">
+                    <input type="checkbox" id="java" name="java" value="Java">
+                    <label for="java">Java</label>
+                    <input type="checkbox" id="html" name="html" value="HTML">
+                    <label for="html">HTML</label>
+                    <input type="checkbox" id="css" name="css" value="CSS">
+                    <label for="css">CSS</label>
+                </div>
+            </div>
+            <div class="error_message">
+                <p class="error--js">Error: </p>
+            </div>
+            <div class="input_field button_container">
+                <button class="enroll--js">Enroll Student</button>
+                <button class="clear--js">Clear</button>
+            </div>
+        </section>
+        <section class="right">
+            <h2 class="right_title">Enrolled Students</h2>
+            <div class="table_container">
+                <table class="student_table">
+                    <tr class="table_heading">
+                        <th>Description</th>
+                        <th>Image</th>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
